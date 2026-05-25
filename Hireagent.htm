@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents For Hire</title>
+    <link rel="stylesheet" href="styleagent.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="Desire.htm" class="imagebutten">
+            <img src="images/image1brownnobackground.png" alt="logo">  
+          </a>
+          <div class="searchbar"> 
+            <form> 
+                <input type="text" placeholder="Search" name="q">
+                <datalist id="suggestions">
+                    <option value="Agents"></option>
+                    <option value="About Us"></option>
+                    <option value="Contact"></option>
+                    <option value="Home"></option>
+                    </option>
+                </datalist>
+                <button type="submit"><img src="images/search end.png"></button>
+            </form>
+          </div>
+            
+            <ul>
+              <li><a href="Hireagent.htm">Agents</a></li>
+              <li><a href="aboutus.htm">About us</a></li>
+              <li><a href="contact.htm">Contact</a></li>
+            </ul> 
+            </header>
+        </nav>
+
+
+            <main>
+                <main>
+                    <h1>Browse Available Agents</h1>
+                
+                    <!-- Search & Filter -->
+                    <div class="filter-container">
+                        <input type="text" id="search" placeholder="Search for an agent..." onkeyup="searchAgents()">
+                        <select id="category" onchange="filterAgents()">
+                            <option value="all">All Categories</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="detective">Private Detective</option>
+                            <option value="security">Corporate Security</option>
+                        </select>
+                    </div>
+                
+                    <!-- Agent Grid Layout -->
+                    <div class="agent-grid">
+                        <a href="agentmakail.htm">
+                        <div class="agent" data-category="cybersecurity">
+                    
+                            <img src="Makail_agent.jpg" alt="Agent 1">
+                            <h2>The Plug</h2>
+                            <p>"Master dealmaker, trusted source, market expert."</p>
+                            <ul class="agent-details">
+                                <li><strong>Height:</strong> 185 cm</li>
+                                <li><strong>Gender:</strong> Male</li>
+                                <li><strong>Weight:</strong> 70 kg</li>
+                                <li><strong>Age:</strong> 22</li>
+                            </ul>
+                            <button class="hire-btn">Hire Me</button>
+                        </div>
+                        </a>
+                        <a href="agentsören.htm">
+                        <div class="agent" data-category="security">
+                            <img src="sören agent.jpg" alt="Agent 2">
+                            <h2>Heisenberg</h2>
+                            <p>"Specialist in corporate security and risk management."</p>
+                            <ul class="agent-details">
+                                <li><strong>Height:</strong> 170 cm</li>
+                                <li><strong>Gender:</strong> Male</li>
+                                <li><strong>Weight:</strong> 65 kg</li>
+                                <li><strong>Age:</strong> 29</li>
+                            </ul>
+                            <button class="hire-btn">Hire Me</button>
+                        </div>
+                    </a>
+                        
+                         <a href="agentrastin.htm">
+                        <div class="agent" data-category="detective">
+                            <img src="agent rastin.jpg" alt="Agent 3">
+                            <h2>The Enforcer</h2>
+                            <p>"Moves in silence, strikes with precision, and always secures the bag."</p>
+                            <ul class="agent-details">
+                                <li><strong>Height:</strong> 185 cm</li>
+                                <li><strong>Gender:</strong> Male</li>
+                                <li><strong>Weight:</strong> 90 kg</li>
+                                <li><strong>Age:</strong> 24</li>
+                            </ul>
+                            <button class="hire-btn">Hire Me</button>
+                        </div>
+                         </a>
+                        <a href="agentliban.htm">
+                         <div class="agent" data-category="detective">
+                            <img src="agentliban.jpeg" alt="Agent 3">
+                            <h2>The Loyalty Detective</h2>
+                            <p>"Liban Mohamud Hassan: Exposing the truth behind loyalty."</p>
+                            <ul class="agent-details">
+                                <li><strong>Height:</strong> 190</li>
+                                <li><strong>Gender:</strong> Male</li>
+                                <li><strong>Weight:</strong> 70 kg</li>
+                                <li><strong>Age:</strong> 22</li>
+                            </ul>
+                            <button class="hire-btn">Hire Me</button>
+                        </div>
+                    </a>
+                        
+                    </div>
+                </main>
+                
+            </main>
+            
+            
+            
+       
+
+        <footer>
+    
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2>About Us</h2>
+                    <p>We are a company that believes in providing the best service for our customers. Learn more about our mission and values.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h2>Contact</h2>
+                    <p>Email: info@desire.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h2>Follow Us</h2>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Desire. All rights reserved.</p>
+            </div>
+        </footer>
+</body>

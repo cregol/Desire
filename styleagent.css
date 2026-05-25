@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    padding: 1%;
+    margin: 0px;
+    background-color: #212121;
+    overflow: hidden;
+    justify-content:space-between
+    
+}
+
+
+
+.navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    
+    
+}
+
+.navbar a:hover{
+    background-color: #444444;
+}
+.navbar{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+   
+
+.navbar img{
+    width: 200px;
+    height: 30px;
+    object-fit: cover;
+    display: block;
+    max-height: 50;
+    transition: transform 0.3s ease-in-out;
+}
+
+.searchbar img {
+    width: 17px;
+    height: 17px;
+}
+
+.searchbar {
+    flex-grow: 1;
+    display: flex;
+    align-content: center;
+    
+}
+
+.searchbar form {
+
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 13px;
+}
+
+.searchbar input {
+
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.searchbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imagebutten:hover img {
+    transform: scale(1.1);
+}
+
+.imagebutten:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #222; /* Dark background color */
+    color: #fff;  /* White text color */
+    padding: 40px 0 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.footer-section {
+    width: 30%; /* Three equal-width sections */
+    margin-bottom: 30px;
+}
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 1%;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links li a:hover {
+    color: #ff6347; 
+}
+
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Welcome{
+        font-size: 15px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%; 
+        margin-bottom: 30px;
+    }
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Set it to the full height of the screen */
+    overflow-y: auto; /* Enables scrolling */
+    position: relative; /* Keeps it within the page layout */
+    background: url('images/plain-black-background-banners_1020697-417654.jpg') no-repeat center center/cover;
+    
+    
+    
+}
+main h1,h2{
+margin-bottom: 1%;
+background: linear-gradient(to right, #e33a10, #ff6347);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+Main::-webkit-scrollbar,.agent-grid {
+    display: none;
+    
+}
+
+/* Search & Filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #e33a10;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(92, 92, 92, 0.8); /* Dark background */
+    color: white;
+    width: 200px;
+    }
+
+/* Style for the Dropdown */
+#category {
+    padding: 10px;
+    border: 1px solid #e33a10;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#search:focus, #category:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(227, 58, 16, 0.8);
+}
+
+#category option {
+    background: black;
+    color: white;
+}
+
+/* Grid Layout: 3 columns */
+.agent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3); /* More emphasis */
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.agent-grid:hover {
+    box-shadow: 0px 6px 15px rgba(227, 58, 16, 0.7); glow when scrolling */
+}
+/* Agent Card */
+.agent {
+    max-width: 300px;
+    background: linear-gradient(rgba(9, 9, 9, 0.8), rgba(0, 0, 0, 0.5)), url('images/agent-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.agent img {
+   
+        width: 150px;  /* Increase size */
+        height: 150px; /* Keep it square */
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        
+    }
+    
+
+/* Agent Details */
+.agent-details {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 3%;
+}
+
+.agent:hover {
+    transform: scale(1.05); /* Slight pop-out effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* More depth */
+}
+
+
+.agent-details li {
+    font-size: 14px;
+}
+
+/* Hire Button */
+.hire-btn {
+    background-color: #e33a10;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hire-btn:hover {
+    background-color: #c72f0d;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .agent-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .agent-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
