@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar">
-          <a href="Desire.htm" class="imagebutten">
+          <a href="index.html" class="imagebutten">
             <img src="images/image1brownnobackground.png" alt="logo">  
           </a>
           <div class="searchbar"> 
